@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+
+<head>
+    <title>CryptoWallet</title>
+</head>
+<style>
+    .box {
+       /* position: absolute;*/
+      width: 100%;
+       height: 100%;
+    }
+</style>
+
+<body>
+    <div class="box">
+        <style>
+            /*.container_hd {
+                display: grid;
+                grid-template-areas:
+                    "elem1 elem2 elem3 elem3 elem4 elem5 elem5 elem6";
+                padding: 1%;
+                gap: 10px;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font: bold;
+            }*/
+            .header_sec {
+                /*display: flex;
+                flex-flow: row wrap;
+                align-items: center;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
+                /* margin-left: auto;
+                margin-right: -20pt;    */
+                display: flex;
+                align-items: center;
+                height: 72px;
+                justify-content: space-between;
+                position: relative;
+                box-sizing: border-box;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+
+            * {
+                box-sizing: border-box;
+                font-family: Calibri;
+            }
+
+            .color_gray {
+                color: gray;
+            }
+
+            .color_green {
+                color: rgb(6, 202, 68);
+            }
+
+            .color_red {
+                color: rgb(247, 103, 103);
+            }
+
+            .color_blue {
+                color: rgb(61, 116, 237);
+            }
+
+            .bold {
+                font-weight: bold;
+            }
+
+            .magr_b {
+                margin-bottom: 10px;
+            }
+        </style>
+        <style>
+            .hd {}
+
+            .categories {
+                padding: 26px 0 26px;
+            }
+            div.categories>ul.page_menu {
+                display: flex;
+                list-style-type: none;
+                justify-content: space-between;
+                margin: 10px;
+            }
+        </style>
+        <div #head class="header_sec">
+            <div><img src="CryptoWallet.png" /></div>
+            <div class="categories">
+                <ul class="page_menu">
+                    <li><a href="#1">Dashboard</a></li>
+                    <li><a href="#2">Market</a></li>
+                    <li><a href="#3">Trends</a></li>
+                </ul>
+            </div>
+            <div>
+                <a href="#4"><img src="find_big.png" /></a>
+                <a href="#5"><img src="people.png" /></a>
+                <a href="#6"><img src="all.png" /></a>
+            </div>
+            <div>
+                <h2 href="#7">Buy</h2>
+            </div>
+        </div>
+        <style>
+            h2 {
+                Color: Black;
+            }
+        </style>
+
+        <style>
+            #h2 {
+                Color: Black;
+                font: bold;
+            }
+        </style>
+        <style>
+            #div0 {
+                padding: 3%;
+                background: lightgrey;
+            }
+        </style>
+        <style>
+            .container {
+                display: grid;
+                grid-template-areas:
+                    "elem1 elem2 elem3 elem3"
+                    "elem4 elem5 elem5 elem6";
+                grid-template-columns: 24% 24% 24% 24%;
+                /*grid-template-rows: 49% 49%;*/
+                grid-template-rows: 350px 400px;
+                padding: 1%;
+                gap: 20px;
+            }
+        </style>
+        <style>
+            .div {
+                background: white;
+                border-radius: 20px;
+            }
+        </style>
+        <style>
+            #div01 {}
+        </style>
+        <style>
+            #div1 {
+                grid-area: elem1;
+            }
+
+            #div2 {
+                grid-area: elem2;
+                background: linear-gradient(to bottom right, rgb(58, 58, 58), rgb(61, 116, 237));
+            }
+
+            #sub_div {
+                margin: 10%; /*растояние от края блока*/
+                
+            }
+
+            #sub_div_3 {
+                margin: 5%;
+            }
+            #div3 {
+                grid-area: elem3;
+            }
+            #div4 {
+                grid-area: elem4;
+            }
+            #div5 {
+                grid-area: elem5;
+            }
+            #div6 {
+                grid-area: elem6;
+            }
+        </style>
+        <style>
+            .button {
+                /*background-color: #4CAF50;
+            /* Green */
+                /*border: none;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer; */
+                border-radius: 30px;
+            }
+
+            .button1 {
+                border: 1px solid white;
+                color: white;
+                background-color: transparent;
+                padding: 15px;
+            }
+
+            .button2 {
+                padding: 5px;
+                width: 70px;
+            }
+
+            .button2_green {
+                border: 1px solid rgb(6, 202, 68);
+                color: white;
+                background-color: rgb(6, 202, 68);
+            }
+
+            .button2_white {
+                border: 1px solid gray;
+                color: gray;
+                background-color: white;
+            }
+        </style>
+        <style>
+            #bl_wh {
+                color: white;
+                font: bold;
+            }
+        </style>
+        <style>
+            .parent {
+                display: flex;
+                align-items: center;
+                /*width: 200px;*/
+                flex-grow: 1;
+                margin: 20px;
+                /*background-color: yellow;*/
+                align-content: stretch;
+                justify-content: space-between;
+                height: 30px;
+            }
+
+            .text_wrap {
+                text-align: left;
+            }
+
+            .image_wrap {
+                flex: 0 0 auto;
+                overflow: hidden;
+                align-self: right;
+                vertical-align: baseline;
+            }
+        </style>
+
+        <div id="div0" class="container">
+            <div id="div1" class="div">
+                <div id="sub_div">
+                    <div class="parent">
+                        <div class="text_wrap">
+                            <h2 id="h2">Balance</h2>
+                        </div>
+                        <div class="image_wrap"><img src="settings.png" width="25" height="25" /></div>
+                    </div>
+                    <div class="parent">
+                        <h1 class="color_gray">$</h1>
+                        <h1>1754,76</h1>
+                        <img src="wallet_small.png" width="40" height="40" />
+                    </div>
+                    <div>
+                        <a class="color_gray">LOG</a>
+                    </div>
+                    <div>
+                        <table>
+                            <colgroup>
+                                <col style="width: 10px;">
+                                <col style="width: 100px;">
+                                <col style="width: 100px;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <td><img src="down_red.png" width="20" height="20"></td>
+                                    <td><a class="color_red" class="bold">$ 35,30</a> </td>
+                                    <td><a class="color_gray">TODAY</a></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="up_green.png" width="20" height="20"></td>
+                                    <td><a class="color_green" class="bold">$ 40,02</a> </td>
+                                    <td><a class="color_gray">TODAY</a></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="up_green.png" width="20" height="20"></td>
+                                    <td><a class="color_green" class="bold">$ 104,88</a> </td>
+                                    <td><a class="color_gray">YESTERDAY</a></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="down_red.png" width="20" height="20"></td>
+                                    <td><a class="color_red" class="bold">$ 95,42</a> </td>
+                                    <td><a class="color_gray">23 NOV 2020</a></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="down_red.png" width="20" height="20"></td>
+                                    <td><a class="color_red" class="bold">$ 204,03</a> </td>
+                                    <td><a class="color_gray">21 NOV 2020</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div id="div2" class="div">
+                <div id="sub_div">
+                    <h1 id="bl_wh">UNLOCK</h1>
+                    <h2 id="bl_wh">THE ULTIMATE</h2>
+                    <h1 id="bl_wh">POWER!</h1>
+                    <input type="submit" name="btn" value="Get Crypto Pro" class="button button1" />
+                </div>
+            </div>
+
+            <style>
+                .convert_panel {
+                    padding: 20px;
+                }
+                .convert_input_cont {
+                    width: 47%;
+                    float: left;
+                }
+                .select_input_field {
+                    /*position: relative;*/
+                    clear: both;
+                }
+                .input_field {
+                    font-size: 16px;
+                    border: solid 1px #d6d9e0;
+                    display: inline-block;
+                    padding: 0 15px;
+                    box-sizing: border-box;
+                    height: 40px;
+                    transition: color 0.3s ease, border 0.3s ease;
+                    border-radius: 3px;
+                }
+
+                .select_input_field__selected_value {
+                   /*position: absolute;*/
+                   /*top: 1px;
+                    right: 1px;
+                    cursor: pointer;
+                    border-left: 1px solid #d6d9e0;
+                    font-size: 16px;*/
+                }
+            </style>
+            <div id="div3" class="div">
+                <div id="sub_div_3">
+                    <div class="parent">
+                        <h2 id="h2">Operations</h2>
+                        <img src="find.png" width="25" height="25" />
+                        <img src="settings.png" width="25" height="25" />
+                    </div>
+                    <div style="display: flex;">
+                        <input type="text" data-bind="first-input" value="1" name="v1" pattern="[0-9]"
+                            class="input-field bold" />
+                        <div class="select_input_field__selected_value">
+                            <span>ETH</span>
+                            <i>></i>
+                        </div>
+                        <input type="text" value="≈ 196,8" name="v2" pattern="[0-9]" class="bold" />
+                        <select size="1" multiple name="val1[]">
+                            <option selected value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                            <option value="RUB">RUB</option>
+                        </select>
+                        <input type="submit" name="btn_Buy" value="Buy" class="button button2 button2_green" />
+                        <input type="submit" name="btn_Sell" value="Sell" class="button button2 button2_white" />
+                    </div>
+                    <style>
+                        .div_tab {
+                            overflow: scroll;
+                            /*table-layout: fixed;*/
+                        }
+                        /*table {
+                            table-layout: fixed;
+                        }*/
+                    </style>
+                    <div class="div_tab">
+                        <table>
+                            <colgroup>
+                                <col style="width: 10px;">
+                                <col style="width: 200px;">
+                                <col style="width: 100px;">
+                                <col style="width: 50px;">
+                                <col style="width: 10px;">
+                                <col style="width: 10px;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <td><img src="update.png" width="20" height="20"></td>
+                                    <td class="magr_b">
+                                        <p class="color_gray">Change</p>
+                                        <p class="bold"><a>0,004</a> <a class="color_gray">BTC</a> <a
+                                                class="color_orange">→</a> <a>0,05012</a> <a class="color_gray">XMR</a>
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p class="color_gray">Fee</p>
+                                        <p class="bold"><a>0,01</a> <a class="color_gray">USD</a></p>
+                                    </td>
+                                    <td>
+                                        <p class="color_gray">License</p>
+                                        <p class="bold"> ETF 8</p>
+                                    </td>
+                                    <td><img src="file.png"></td>
+                                    <td><img src="star_gray.png"></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="up.png" width="20" height="20"></td>
+                                    <td class="magr_b">
+                                        <p class="color_gray">Sell</p>
+                                        <p class="bold"><a>200,12</a> <a class="color_gray">XPR</a> <a
+                                                class="color_green">→</a> <a>40,5489</a> <a class="color_gray">USD</a>
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p class="color_gray">Fee</p>
+                                        <p class="bold"><a>0,05</a> <a class="color_gray">USD</a></p>
+                                    </td>
+                                    <td>
+                                        <p class="color_gray">License</p>
+                                        <p class="bold"> APR 10</p>
+                                    </td>
+                                    <td><img src="file.png"></td>
+                                    <td><img src="star_gray.png"></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="add.png" width="20" height="20"></td>
+                                    <td class="magr_b">
+                                        <p class="color_gray">Bonus</p>
+                                        <p class="bold"><a class="color_blue">+</a> <a>14,06</a> <a
+                                                class="color_gray">USD</a> <a class="color_gray">(CVCA-2)</a> </p>
+                                    </td>
+                                    <td>
+                                        <p class="color_gray">Fee</p>
+                                        <p class="bold"><a>0,20</a> <a class="color_gray">USD</a></p>
+                                    </td>
+                                    <td>
+                                        <p class="color_gray">License</p>
+                                        <p class="bold"> ECV 3</p>
+                                    </td>
+                                    <td><img src="file.png"></td>
+                                    <td><img src="star_gray.png"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <style>
+                .head4 {
+                    display: flex;
+                    gap: 10px;
+                    /*grid-template-columns: 60% 20% 20%;*/
+                    /*grid-template-rows: 35px;/*/
+                }
+
+                .container4 {
+                    display: grid;
+                    gap: 10px;
+                    grid-template-columns: 20% 50% 30%;
+                    grid-template-rows: 35px;
+                }
+            </style>
+            <div id="div4" class="div">
+                <div id="sub_div">
+                    <div class="parent">
+                        <div class="head4">
+                            <h2 id="h2">Rates</h2>
+                            <h2 class="color_gray">in</h2>
+                            <h2 class="color_gray">USD</h2>
+                        </div>
+                        <div><img src="settings.png" width="25" height="25" /></div>
+                    </div>
+                    <div class="container4">
+                        <div><img src="btc_white.png" width="20" height="20" /></div>
+                        <div><a class="color_gray">Bitcoin</a></div>
+                        <div><a>$ 4319,89</a></div>
+                    </div>
+                    <div class="container4">
+                        <div><img src="monero.png" width="20" height="20" /></div>
+                        <div><a class="color_gray">Monero</a></div>
+                        <div><a>$ 57,84</a></div>
+                    </div>
+                    <div class="container4">
+                        <div><img src="bitsh.png" width="20" height="20" /></div>
+                        <div><a class="color_gray">BitShares</a></div>
+                        <div><a>$ 0,1690</a></div>
+                    </div>
+                    <div class="container4">
+                        <div><img src="dash.png" width="20" height="20" /></div>
+                        <div><a class="color_gray">Dash</a></div>
+                        <div><a>$ 172,19</a></div>
+                    </div>
+                    <div class="container4">
+                        <div><img src="lit.png" width="20" height="20" /></div>
+                        <div><a class="color_gray">Litecoin</a></div>
+                        <div><a>$ 46,50</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <style>
+                .container5 {
+                    display: grid;
+                    grid-template-areas:
+                        "elem1 elem2 elem2 elem3"
+                        "elem1 elem4 elem5 elem3";
+                    grid-template-columns: 5% 70% 20% 5%;
+                    gap: 0.5px;
+                }
+
+                #feed {
+                    /*overflow-y: unset;*/
+                    margin-bottom: 20px;
+                    overflow: scroll;
+                }
+
+                #cont3_1 {
+                    grid-area: elem1;
+                }
+
+                #cont3_2 {
+                    grid-area: elem2;
+                }
+
+                #cont3_3 {
+                    grid-area: elem3;
+                    align-self: center;
+                }
+
+                #cont3_4 {
+                    grid-area: elem4;
+                }
+
+                #cont3_5 {
+                    grid-area: elem5;
+                }
+
+                .feed_txt {
+                    font-size: medium;
+                }
+
+                .color_orange {
+                    color: orange;
+                }
+
+                .gray_line {
+                    border-left: 6px solid rgb(199, 198, 198);
+                }
+
+                .green_line {
+                    border-left: 6px solid rgb(6, 202, 68);
+                }
+
+                .red_line {
+                    border-left: 6px solid rgb(245, 171, 171);
+                }
+            </style>
+            <div id="div5" class="div">
+                <div id="sub_div_3">
+                    <div class="parent">
+                        <div>
+                            <h2 id="h2">Feed</h2>
+                        </div>
+                        <div class="img_settings"><img src="find.png" width="25" height="25" /></div>
+                        <div class="img_settings"><img src="settings.png" width="25" height="25" /></div>
+                    </div>
+                    <div id="feed">
+                        <div class="container5">
+                            <div id="cont3_1" class="gray_line"></div>
+                            <h3 id="cont3_2">Two versions of Digital Dollar Emerge as Contenders, but Unikely to Come
+                                Soon</h3>
+                            <a id="cont3_4">at Cointelegraph</a>
+                            <a id="cont3_5" class="color_orange"> hours ago</a>
+                            <div id="cont3_3"><img src="right.png"></div>
+                        </div>
+                        <div class="container5">
+                            <div id="cont3_1" class="green_line"></div>
+                            <h3 id="cont3_2">US Debt Hits $24 Trillion as Bitcoin Marches On</h3>
+                            <a id="cont3_4">at Decrypt</a>
+                            <a id="cont3_5" class="color_orange">Apr 10</a>
+                            <div id="cont3_3"><img src="right.png"></div>
+                        </div>
+                        <div class="container5">
+                            <div id="cont3_1" class="gray_line"></div>
+                            <h3 id="cont3_2">Monero Price is the Only One Outperforming Bitcoin?</h3>
+                            <a id="cont3_4">at Cryptopolitan</a>
+                            <a id="cont3_5" class="color_orange">Apr 8</a>
+                            <div id="cont3_3"><img src="right.png"></div>
+                        </div>
+                        <div class="container5">
+                            <div id="cont3_1" class="red_line"></div>
+                            <h3 id="cont3_2">Crypto Can Save User Data Amid Plans for Massive Surveilance</h3>
+                            <a id="cont3_4">at Cryptopolitan</a>
+                            <a id="cont3_5" class="color_orange">Apr 1</a>
+                            <div id="cont3_3"><img src="right.png"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <style>
+                .container6 {
+                    display: grid;
+                    gap: 10px;
+                    grid-template-columns: 20% 60% 20%;
+                }
+            </style>
+            <div id="div6" class="div">
+                <div id="sub_div">
+                    <div class="parent">
+                        <h2 id="h2">Wallets</h2>
+                        <div class="img_settings"><img src="settings.png" width="25" height="25" /></div>
+                    </div>
+
+                    <div class="container6">
+                        <div><img src="star.png" width="40" height="40" /></div>
+                        <div>
+                            <div><a class="color_gray">Main account</a></div>
+                            <div><a>$ 3035,89</a></div>
+                        </div>
+                        <div><img src="dollar.png" width="40" height="40" /></div>
+                    </div>
+                    <div class="container6">
+                        <div><img src="coins.png" width="40" height="40" /></div>
+                        <div>
+                            <div><a class="color_gray">Crypto marcets</a></div>
+                            <div><a>B 0,00403</a></div>
+                        </div>
+                        <div><img src="btc.png" width="40" height="40" /></div>
+                    </div>
+
+                    <div class="container6">
+                        <div><img src="coins.png" width="40" height="40" /></div>
+                        <div>
+                            <div><a class="color_gray">Investment</a></div>
+                            <div><a>R 2,14594</a></div>
+                        </div>
+                        <div><img src="3pic.png" width="40" height="40" /></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
